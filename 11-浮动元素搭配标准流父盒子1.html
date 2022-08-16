@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动元素搭配标准流父盒子1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 1350px;
+            height: 504px;
+            margin: 100px auto;
+            /* background-image: url(images/xiaomi.png); */
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box .nav {
+            float: left;
+            background-color: #413f40;
+            width: 258px;
+            height: 482px;
+            padding-top: 22px;
+
+        }
+
+        ul a {
+            display: block;
+            width: 224px;
+            height: 46px;
+            font-size: 14px;
+            line-height: 46px;
+            text-decoration: none;
+            color: #ffffff;
+            padding-left: 34px;
+        }
+
+        ul a:hover {
+            background-color: #ff6700;
+        }
+
+        .two {
+            font-size: 18px;
+            margin-left: 158px;
+        }
+
+        .four {
+            font-size: 18px;
+            margin-left: 125px;
+        }
+
+        .five {
+            font-size: 18px;
+            margin-left: 111px;
+        }
+
+        .pro {
+            float: left;
+            width: 1092px;
+            height: 504px;
+        }
+
+        .pro img {
+            width: 1092px;
+            height: 504px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="nav">
+            <ul>
+                <a href="#">
+                    <li>手机<strong class="two">></strong></li>
+                </a>
+                <a href="#">
+                    <li>电视<strong class="two">></strong></li>
+                </a>
+                <a href="#">
+                    <li>笔记本 平板<strong class="five">></strong></li>
+                </a>
+                <a href="#">
+                    <li>出行 穿戴<strong class="four">></strong></li>
+                </a>
+                <a href="#">
+                    <li>耳机 音箱<strong class="four">></strong></li>
+                </a>
+                <a href="#">
+                    <li>家电<strong class="two">></strong></li>
+                </a>
+                <a href="#">
+                    <li>智能 路由器<strong class="five">></strong></li>
+                </a>
+                <a href="#">
+                    <li>电源 配件<strong class="four">></strong></li>
+                </a>
+                <a href="#">
+                    <li>健康 儿童<strong class="four">></strong></li>
+                </a>
+                <a href="#">
+                    <li>生活 箱包<strong class="four">></strong></li>
+                </a>
+            </ul>
+        </div>
+        <div class="pro">
+            <a href="#">
+                <img src="images/xiaomi.png" alt="产品">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

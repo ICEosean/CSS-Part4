@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动元素搭配标准流父盒子2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1210px;
+            height: 284px;
+            margin: 100px auto;
+            background-color: skyblue;
+            list-style: none;
+        }
+
+        .box li {
+            float: left;
+            width: 292px;
+            height: 284px;
+            margin: 0 14px 0 0;
+            background-color: pink;
+        }
+
+        /* 这里必须写 .box .last 要注意权重的问题 20  */
+        .box .last {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="box">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li class="last"></li>
+    </ul>
+</body>
+
+</html>

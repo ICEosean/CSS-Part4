@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动布局练习3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1220px;
+            height: 616px;
+            /* background: skyblue; */
+            margin: 100px auto;
+        }
+
+        .box .list ul {
+            list-style: none;
+        }
+
+        .box .image {
+            float: left;
+            width: 226px;
+            height: 616px;
+            background-color: pink;
+        }
+
+        .box .list {
+            float: left;
+            width: 994px;
+            height: 616px;
+            /* background-color: green; */
+        }
+
+        /* 子代选择器 只会选择自己的亲儿子 */
+        .box .list ul>li {
+            float: left;
+            width: 234px;
+            height: 302px;
+            background-color: purple;
+        }
+
+        li:hover {
+            box-shadow: 15px 15px 10px -4px rgba(0, 0, 0, .3);
+        }
+
+        .box .list .pro1 li {
+            margin: 0 0 14px 14px;
+        }
+
+        .box .list .pro2 li {
+            margin: 0 0 14px 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="image">
+
+        </div>
+        <div class="list">
+            <ul class="pro1">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="pro2">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

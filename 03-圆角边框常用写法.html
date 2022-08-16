@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框常用写法</title>
+    <style>
+        .yuanxing {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* border-radius: 100px; */
+            /* 50%就是宽度和高度的一半 等价于100px  */
+            border-radius: 50%;
+        }
+
+        .juxing {
+            width: 300px;
+            height: 100px;
+            background-color: skyblue;
+            /* 圆角矩形 设置为高度的一半 */
+            border-radius: 50px;
+        }
+
+        /*  该属性是一个简写属性，可以跟四个值，分别代表左上角、右上角、右下角、左下角 */
+
+        /* 分开写：border-top-left-radius、border-top-right-radius、border-bottom-right-radius 和border-bottom-left-radius */
+
+        /*  兼容性 ie9+ 浏览器支持, 但是不会影响页面布局,可以放心使用. */
+
+        .radius {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* border-radius: 20px 30px 40px 50px; */
+            /* border-radius: 20px 50px; */
+            border-bottom-right-radius: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    1.圆形的做法：
+    <div class="yuanxing"></div>
+    2.矩形圆角的做法：
+    <div class="juxing"></div>
+    3.可以设置不同的圆角：
+    <div class="radius"></div>
+</body>
+
+</html>
